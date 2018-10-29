@@ -1,0 +1,177 @@
+
+
+/* _____________________ Style de police _____________________________*/
+@font-face {
+   font-family: 'cac_champagne';
+   src: url('../font/cac_champagne.ttf');/* le titre en bleu*/
+}
+@font-face {
+ font-family: 'Alice-Regular';
+   src: url('../font/Alice-Regular.ttf');
+}
+@font-face {
+ font-family: 'LEMONCHI';
+   src: url('../font/LEMONCHI.ttf');
+}
+@font-face {
+ font-family: 'CaviarDreams';
+   src: url('../font/CaviarDreams.ttf');
+}
+
+h1 {
+   font-family: 'LEMONCHI', serif;
+}
+
+h2{
+ font-family: 'Alice-Regular', serif;
+ font-weight: bolder;
+}
+
+/*______________________________ changement de couleur de texte ___________________*/
+
+.experience h2{
+ color: rgb(222,111,000);
+}
+.competence h2{
+ color: rgb(22,111,000)
+}
+.formation h2{
+ color: rgb(222,11,100)
+}
+
+.langue h2 , .hobbi h2{
+ color: white;
+}
+
+/* ___________________ image en arrière plan _____________________*/
+
+body{
+ background-image: url("../Image/ap_cv.png");
+}
+
+
+
+.cvait{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: nowrap;
+}
+
+
+.partie:nth-child(2){
+ margin-left: 20px;
+ margin-right: 20px;
+}
+
+.partie:nth-child(1){
+ border-radius: 7px;
+ background-color: rgba(50,100,150,0.7);
+ width: 210px;
+ min-width: 210px;
+ height: 800px;
+ padding-left: 10px;
+}
+
+
+/* positionnement  de la liste a puce sous langues */
+.langue ul li{
+ list-style-type: none;
+ margin-left: -30px;
+ padding-left: 0px;
+}
+
+.hobbi ul li{
+ list-style-type: none;
+ margin-left: -10px;
+ padding-left: 0px;
+}
+
+
+
+
+
+
+/* ______________________  profil decoration (positionnement) ______________________*/
+#entete{
+ border-bottom: 2px dashed blue;
+ text-align: center;
+}
+
+
+.profil-img:nth-child(1){
+ order: 2;
+
+
+}
+.profil-info:nth-child(2){
+ order: 1;
+ flex: 1;
+
+}
+/* présentationen colomn de compétemce, expérience, formation*/
+#lecorps{
+ display: flex;
+ justify-content: space-between;
+ flex-direction: row;
+ flex-wrap: nowrap;
+}
+
+
+/* **************** La citation en bleu (changement de coleur de police) *********************/
+.profil-info p{
+ font-family: 'cac_champagne';
+ font-weight: bold;
+ font-size: x-large;
+ color: blue;
+}
+
+.profil-info{
+ text-align: center;
+}
+
+/* _________________décotration de l'image_____________________ */
+
+.profil-img a img{
+ border: 4px skyblue solid;
+ border-radius: 5px;
+}
+
+
+/* __________________________chagement de de police, aligment de texte et bordure_______________ */
+
+.experience ul {
+ font-family: 'CaviarDreams', serif;
+ text-align: justify;
+ border-left: 5px rgb(222,111,000) dashed;
+}
+
+.competence ul{
+ font-family: 'CaviarDreams', serif;
+ text-align: justify;
+ border-left: 5px rgb(22,111,000) dashed;
+}
+
+.formation ul{
+ font-family: 'CaviarDreams', serif;
+ text-align: justify;
+ border-left: 5px rgb(222,11,100) dashed;
+}
+
+.langue ul , .hobbi ul{
+ font-family: 'CaviarDreams', serif;
+}
+
+
+
+.formation,.experience,.competence{
+
+ width: 30%;
+}
+
+
+.formation ul li a:hover{
+ text-decoration: none;
+ font-weight: bold;
+ color: rgb(222,11,100);
+
+}
