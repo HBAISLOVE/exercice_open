@@ -51,3 +51,4 @@ Ce projet est enregistré sous une license MIT.
 
 * Merci à Matthieu Nebra et à toute son équipe sans oublier le guide de ce cours Marc G. Gauthier
 * A toi aussi mon correcteur
+* Merci mon Dieu...
